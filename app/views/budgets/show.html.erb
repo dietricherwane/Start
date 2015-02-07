@@ -1,0 +1,73 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+  <li><a href="<%= budget_path %>">Nouveau budget</a></li>
+  <li><a href="<%= budgets_path %>">Liste des budgets</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <!-- START DEFAULT DATATABLE -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Liste des budgets</h3>
+          <ul class="panel-controls">
+            <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <%= notification_messages! %>
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th><%= Budget.human_attribute_name("label") %></th>
+                <th><%= Budget.human_attribute_name("published") %></th>
+                <th>Date de création</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @budgets.each do |budget| %>
+                <tr>
+                  <td>
+                    <%= budget.label %>
+                  </td>
+                  <td>
+                    <% if budget.published == false %>
+                      <div class="list-group-status status-offline"></div>
+                    <% else %>
+                      <div class="list-group-status status-online"></div>
+                    <% end %>
+                  </td>
+                  <td>
+                    <%= budget.created_at.strftime("%d-%m-%Y") + " à " + budget.created_at.strftime("%Hh %Mmn") %>
+                  </td>
+                  <td>
+                    <a href = "<%= edit_budget_path(budget.id) %>" style = "text-decoration: none;">
+                      <span class="fa fa-pencil" style = "margin-right: 15px;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editer le budget"></span>
+                    </a>
+                    <% if budget.published == false %>
+                      <a href = "<%= enable_budget_path(budget.id) %>">
+                        <span class="fa fa-check" data-toggle="tooltip" data-placement="top" title="" data-original-title="Activer le budget"></span>
+                      </a>
+                    <% else %>
+                      <a href = "<%= disable_budget_path(budget.id) %>"  style = "text-decoration: none;">
+                        <span class="fa fa-times-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Désactiver le budget"></span>
+                      </a>
+                    <% end %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <!-- END DEFAULT DATATABLE -->
+    </div>
+  </div>
+</div>

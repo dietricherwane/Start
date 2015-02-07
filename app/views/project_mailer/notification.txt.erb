@@ -1,0 +1,49 @@
+
+Bonjour, vous avez reçu un email de soumission de projet du site: startdeco.com
+
+
+      Nom:  <%= @project_info.name %>
+
+
+
+      Email:  <%= @project_info.email %>
+
+
+
+      Numéro de téléphone:  <%= @project_info.phone_number %>
+
+
+
+      Nom de l'entreprise:  <%= @project_info.company_name %>
+
+
+
+      Site web:  <%= @project_info.website %>
+
+
+
+      Localisation:  <%= @project_info.location %>
+
+
+
+      Descriptif du projet:  <%= simple_format(@project_info.details) %>
+
+
+
+      Date prévisionnelle de début:  <%= @project_info.begin_date.strftime("%d-%m-%Y") %>
+
+
+
+      Budget:  <%= @project_info.budget.label %>
+
+
+
+      Descriptif du tâches attendues:  <%= simple_format(@project_info.desired_task) %>
+
+
+
+      Détails additionnels:  <%= simple_format(@project_info.anything_else) %>
+
+
+
+Cordialement.

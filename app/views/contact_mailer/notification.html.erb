@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Bonjour, vous avez reçu un email de prise de contact du site: startdeco.com</p>
+    <br />
+    <p>
+      <b>Nom: </b> <%= @contact_info.name %>
+    </p>
+    <br />
+    <p>
+      <b>Email: </b> <%= @contact_info.email %>
+    </p>
+    <br />
+    <p>
+      <b>Sujet: </b> <%= @contact_info.subject.name %>
+    </p>
+    <br />
+    <p>
+      <b>Message: </b> <%= simple_format(@contact_info.message) %>
+    </p>
+    <br />
+    <p>
+      Cordialement.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+  <li><a href="<%= subject_path %>">Liste des emails de contacts</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <!-- START DEFAULT DATATABLE -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Liste des emails de contacts</h3>
+          <ul class="panel-controls">
+            <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th><%= Contact.human_attribute_name("name") %></th>
+                <th><%= Contact.human_attribute_name("email") %></th>
+                <th><%= Contact.human_attribute_name("subject_id") %></th>
+                <th><%= Contact.human_attribute_name("Message") %></th>
+                <th>Date d'envoi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @contacts.each do |contact| %>
+                <tr>
+                  <td>
+                    <%= contact.name %>
+                  </td>
+                  <td>
+                    <%= contact.email %>
+                  </td>
+                  <td>
+                    <%= contact.subject.name %>
+                  </td>
+                  <td>
+                    <div class="panel-group accordion accordion-dc">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading ui-draggable-handle">
+                          <h4 class="panel-title">
+                              <a href="#accTwoColThree">
+                                 Contenu du message
+                              </a>
+                          </h4>
+                        </div>
+                        <div class="panel-body" id="accTwoColThree" style="display: none;">
+                            <%= simple_format(contact.message) %>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <%= contact.created_at.strftime("%d-%m-%Y") + " à " + contact.created_at.strftime("%Hh %Mmn") %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <!-- END DEFAULT DATATABLE -->
+    </div>
+  </div>
+</div>

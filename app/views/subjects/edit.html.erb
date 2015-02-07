@@ -1,0 +1,50 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+    <li><a href="<%= subject_path %>">Nouveau sujet</a></li>
+    <li><a href="<%= subjects_path %>">Liste des sujets</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+      <div class="col-md-12">
+
+
+          <%= form_for @subject, url: update_subject_path, method: :post,  html: {class: "form-horizontal"} do |f| %>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Modifier le sujet: <strong><%= @subject.name %></strong></h3>
+              </div>
+              <div class="panel-body">
+                  <p>Ce formulaire est destiné à la modification des sujets sur lesquels les internautes peuvent écrire qui seront affichés dans le formulaire de contacts.</p>
+              </div>
+              <div class="panel-body">
+
+                <%= subject_messages! %>
+
+                <div class="form-group">
+
+                  <%= f.label :name, class: 'col-md-3 col-xs-12 control-label' %>
+                  <div class="col-md-6 col-xs-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                      <%= f.text_field :name, class: 'form-control', placeholder: "Veuillez entrer l'intitulé du sujet" %>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="panel-footer">
+                <button class="btn btn-primary">Valider</button>
+              </div>
+          </div>
+          <% end %>
+
+      </div>
+  </div>
+  <!-- END ROW -->
+
+</div>

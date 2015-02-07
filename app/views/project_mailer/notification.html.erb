@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Bonjour, vous avez reçu un email de soumission de projet du site: startdeco.com</p>
+    <br />
+    <p>
+      <b>Nom: </b> <%= @project_info.name %>
+    </p>
+    <br />
+    <p>
+      <b>Email: </b> <%= @project_info.email %>
+    </p>
+    <br />
+    <p>
+      <b>Numéro de téléphone: </b> <%= @project_info.phone_number %>
+    </p>
+    <br />
+    <p>
+      <b>Nom de l'entreprise: </b> <%= @project_info.company_name %>
+    </p>
+    <br />
+    <p>
+      <b>Site web: </b> <%= @project_info.website %>
+    </p>
+    <br />
+    <p>
+      <b>Localisation: </b> <%= @project_info.location %>
+    </p>
+    <br />
+    <p>
+      <b>Descriptif du projet: </b> <%= simple_format(@project_info.details) %>
+    </p>
+    <br />
+    <p>
+      <b>Date prévisionnelle de début: </b> <%= @project_info.begin_date.strftime("%d-%m-%Y") %>
+    </p>
+    <br />
+    <p>
+      <b>Budget: </b> <%= @project_info.budget.label %>
+    </p>
+    <br />
+    <p>
+      <b>Descriptif du tâches attendues: </b> <%= simple_format(@project_info.desired_task) %>
+    </p>
+    <br />
+    <p>
+      <b>Détails additionnels: </b> <%= simple_format(@project_info.anything_else) %>
+    </p>
+    <br />
+    <p>
+      Cordialement.
+    </p>
+  </body>
+</html>

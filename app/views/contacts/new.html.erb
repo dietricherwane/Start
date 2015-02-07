@@ -1,0 +1,69 @@
+<div id="contact-container" class="container">
+<!-- SKILLS -->
+  <h2 class="with-breaker animate-me fadeInUp">
+	  Contact <span>Let's get in touch</span>
+  </h2>
+  <p class = "center">
+    Notre clientèle cible et surtout notre objectif est de séduire le maximum de nouveaux acheteurs potentiels et aussi les promoteurs immobiliers partout en Côte d'Ivoire et la dans sous-région.
+  </p>
+  <p class = "center">
+    Il ne s’agit pas de design et d'ameublement seulement mais d'être en harmonie avec une catégorie d’acheteurs en particulier et de comprendre qui ils sont puis de leur faire la démonstration que nous avons compris leurs besoins.
+  </p>
+  <p class = "center">
+    <span class="surline">
+      Nous avons la ferme conviction que les consommateurs comprendraient l'utilité du concept clé à main et seraient prêts à investir pour avoir une tranquillité d'esprit.
+    </span>
+  </p>
+  <div class="row">
+	  <div class="col-md-6">
+		  <!-- Google Map -->
+		  <div id="GoogleMap"></div>
+	  </div>
+	  <div class="col-md-6">
+	    <div style = "text-align: center;"><%= contact_messages! %></div>
+		  <!-- FORMS -->
+		  <%= form_for @contact, url: create_contact_path, method: :post,  html: {class: "form-horizontal", id: "contact-form"} do |f| %>
+		  <!-- NAME -->
+		  <div class="control-group row">
+			  <%= f.label :name, class: 'col-md-3 col-xs-12 control-label' %>
+			  <div class="controls col-md-9">
+				  <%= f.text_field :name, class: 'input-xlarge form-control', placeholder: "Veuillez entrer votre nom" %>
+			  </div>
+		  </div>
+		  <div class="control-group row">
+			  <%= f.label :email, class: 'col-md-3 col-xs-12 control-label' %>
+			  <div class="controls col-md-9">
+				  <%= f.text_field :email, class: 'input-xlarge form-control', placeholder: "Veuillez entrer votre email" %>
+			  </div>
+		  </div>
+		  <div class="control-group row">
+			  <%= f.label :subject_id, class: 'col-md-3 col-xs-12 control-label' %>
+			  <div class="controls col-md-9">
+			    <%= f.collection_select(:subject_id, @subjects, :id, :name, options ={prompt: "Veuillez choisir un sujet"}, html_options = {class: "input-xlarge form-control"}) %>
+			  </div>
+		  </div>
+
+		  <div class="control-group row">
+			  <%= f.label :message, class: 'col-md-3 col-xs-12 control-label' %>
+			  <div class="controls col-md-9">
+				  <%= f.text_area :message, class: 'form-control', placeholder: "Veuillez entrer votre message" %>
+			  </div>
+		  </div>
+		  <!-- CAPTCHA -->
+		  <div class="control-group row">
+			  <%#= f.label :captcha, class: 'col-md-3 col-xs-12 control-label' %>
+			  <div class="controls col-md-9">
+			    <%#= recaptcha_tags %>
+			  </div>
+		  </div>
+		  <!-- BUTTON -->
+		  <div class="control-group text-right">
+		   	<input type="hidden" name="submitted" id="submitted" value="true" />
+		   	<button type="submit" class="btn btn-default" name="submitted"><i class="fa fa-paper-plane-o"></i> Envoyer</button>
+		  </div>
+	  <% end %>
+	  </div>
+  </div>
+</div>
+
+<%= javascript_include_tag 'front/maps', 'data-turbolinks-track' => true %>

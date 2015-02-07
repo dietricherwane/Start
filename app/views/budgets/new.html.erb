@@ -1,0 +1,49 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+    <li><a href="<%= budget_path %>">Nouveau budget</a></li>
+    <li><a href="<%= budgets_path %>">Liste des budgets</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+      <div class="col-md-12">
+
+
+          <%= form_for @budget, url: create_budget_path, method: :post,  html: {class: "form-horizontal"} do |f| %>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Créer un <strong>Budget</strong></h3>
+              </div>
+              <div class="panel-body">
+                  <p>Ce formulaire est destiné à la création des budgets qui seront affichés dans le formulaire de demande d'étude de projet.</p>
+              </div>
+              <div class="panel-body">
+
+                <%= budget_messages! %>
+
+                <div class="form-group">
+                  <%= f.label :label, class: 'col-md-3 col-xs-12 control-label' %>
+                  <div class="col-md-6 col-xs-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                      <%= f.text_field :label, class: 'form-control', placeholder: "Veuillez entrer l'intitulé du budget" %>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="panel-footer">
+                <button class="btn btn-primary">Valider</button>
+              </div>
+          </div>
+          <% end %>
+
+      </div>
+  </div>
+  <!-- END ROW -->
+
+</div>

@@ -1,0 +1,49 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+    <li><a href="<%= completed_project_category_path %>">Nouvelle catégorie de projets</a></li>
+    <li><a href="<%= completed_project_categories_path %>">Liste des catégories de projets</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+      <div class="col-md-12">
+
+
+          <%= form_for @completed_project_category, url: create_completed_project_category_path, method: :post,  html: {class: "form-horizontal"} do |f| %>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Créer une <strong>catégorie de projets</strong></h3>
+              </div>
+              <div class="panel-body">
+                  <p>Ce formulaire est destiné à la création des catégorie de projets.</p>
+              </div>
+              <div class="panel-body">
+
+                <%= completed_project_category_messages! %>
+
+                <div class="form-group">
+                  <%= f.label :name, class: 'col-md-3 col-xs-12 control-label' %>
+                  <div class="col-md-6 col-xs-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                      <%= f.text_field :name, class: 'form-control', placeholder: "Veuillez entrer le titre de la catégorie" %>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="panel-footer">
+                <button class="btn btn-primary">Valider</button>
+              </div>
+          </div>
+          <% end %>
+
+      </div>
+  </div>
+  <!-- END ROW -->
+
+</div>

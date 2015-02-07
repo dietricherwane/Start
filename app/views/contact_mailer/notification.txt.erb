@@ -1,0 +1,14 @@
+
+Bonjour, vous avez reçu un email de prise de contact du site: startdeco.com
+
+
+Nom: <%= @contact_info.name %>
+
+Email: <%= @contact_info.email %>
+
+Sujet: <%= @contact_info.subject.name %>
+
+Message: <%= simple_format(@contact_info.message) %>
+
+
+Cordialement.

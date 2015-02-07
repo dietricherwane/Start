@@ -1,0 +1,108 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+  <li><a href="<%= projects_path %>">Liste des projets soumis</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <!-- START DEFAULT DATATABLE -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Liste des projets soumis</h3>
+          <ul class="panel-controls">
+            <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th>Informations personnelles</th>
+                <th>Détails concernant le projet</th>
+                <th>Budget</th>
+                <th>Date de soumission</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @projects.each do |project| %>
+                <tr>
+                  <td>
+                    <ul class="list-group border-bottom">
+                      <li class="list-group-item"><b>Nom:</b> <%= project.name %></li>
+                      <li class="list-group-item"><b>Email:</b> <%= project.email %></li>
+                      <li class="list-group-item"><b>Numéro de téléphone:</b> <%= project.phone_number %></li>
+                      <li class="list-group-item"><b>Nom de l'entreprise:</b> <%= project.company_name %></li>
+                      <li class="list-group-item"><b>Site web:</b> <%= project.website %></li>
+                      <li class="list-group-item"><b>Localisation:</b> <%= project.location %></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="panel-group accordion accordion-dc">
+                      <div class="panel panel-primary">
+                        <div class="panel-heading ui-draggable-handle">
+                          <h4 class="panel-title">
+                              <% description = "descriptif_#{project.id}" %>
+                              <a href="#<%= description %>">
+                                 Descriptif
+                              </a>
+                          </h4>
+                        </div>
+                        <div class="panel-body" id="<%= description %>" style="display: none;">
+                            <%= simple_format(project.details) %>
+                        </div>
+                      </div>
+
+                      <div class="panel panel-primary">
+                        <div class="panel-heading ui-draggable-handle">
+                          <h4 class="panel-title">
+                              <% tasks = "tasks_#{project.id}" %>
+                              <a href="#<%= tasks %>">
+                                 Liste des tâches
+                              </a>
+                          </h4>
+                        </div>
+                        <div class="panel-body" id="<%= tasks %>" style="display: none;">
+                            <%= simple_format(project.desired_task) %>
+                        </div>
+                      </div>
+
+                      <div class="panel panel-primary">
+                        <div class="panel-heading ui-draggable-handle">
+                          <h4 class="panel-title">
+                              <% anything_else = "anything_else_#{project.id}" %>
+                              <a href="#<%= anything_else %>">
+                                 Détails additionnels
+                              </a>
+                          </h4>
+                        </div>
+                        <div class="panel-body" id="<%= anything_else %>" style="display: none;">
+                            <%= simple_format(project.anything_else) %>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <ul class="list-group border-bottom">
+                      <li class="list-group-item"><b>Budget:</b> <%= project.budget.label %></li>
+                      <li class="list-group-item"><b>Date de début:</b> <%= project.created_at.strftime("%d-%m-%Y") %></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <%= project.created_at.strftime("%d-%m-%Y") + " à " + project.created_at.strftime("%Hh %Mmn") %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <!-- END DEFAULT DATATABLE -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+<div class="container">
+	<!-- SKILLS -->
+	<h2 class="with-breaker animate-me fadeInUp">
+		Nos compétences<span>Notre expertise à votre service!</span>
+	</h2>
+	<table id="skills-container" class="skills">
+		<tr class="skills-row">
+			<td class="skill animate-me zoomIn">
+  			<h4><i class="fa fa-star-o"></i>Design d'intérieur</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.
+  			Phasellus ac nibh ut dui fringilla aliquam</p>
+			</td>
+			<td class="skill animate-me zoomIn">
+  			<h4><i class="fa fa-ellipsis-v"></i>Conception de plans</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.
+  			Phasellus ac nibh ut dui fringilla aliquam</p>
+			</td>
+			<td class="skill animate-me zoomIn">
+  			<h4><i class="fa fa-sun-o"></i>Architecture 3D</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.
+  			Phasellus ac nibh ut dui fringilla aliquam</p>
+			</td>
+		</tr>
+		<tr class="skills-row animate-me zoomIn">
+			<td class="skill">
+  			<h4><i class="fa fa-gavel"></i>Rénovation</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.
+  			Phasellus ac nibh ut dui fringilla aliquam</p>
+			</td>
+			<td class="skill animate-me zoomIn">
+  			<h4><i class="fa fa-book"></i>Audit</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.</p>
+			</td>
+			<td class="skill animate-me zoomIn">
+  			<h4><i class="fa fa-cubes"></i>Consulting</h4>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.
+  			Phasellus ac nibh ut dui fringilla aliquam</p>
+			</td>
+		</tr>
+	</table>
+	<div class="skill-button center animate-me fadeInUp">
+		<a href="<%= skills_path %>" class="btn btn-default"><i class="fa fa-bookmark-o"></i> Nos compétences</a>
+	</div>
+
+	<!--PORTFOLIO -->
+	<h2 class="with-breaker animate-me fadeInUp">
+		Nos projets récents <span>Nous sommes passionnés!</span>
+	</h2>
+</div>
+<div id="portfolio-container" class="with-separation-bottom with-separation-top">
+	<!--PORTFOLIO ITEM -->
+	<% unless @completed_projects.blank? %>
+	  <% @completed_projects.each do |completed_project| %>
+	    <figure class="portfolio-item effect-sadie">
+        <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
+        <figcaption>
+          <h4><%= completed_project.name %></h4>
+          <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
+        </figcaption>
+      </figure>
+    <% end %>
+  <% end %>
+</div>
+<div class="portfolio-button center animate-me zoomIn">
+	<a href="portfolio.html" class="btn btn-default"><i class="fa fa-trophy"></i> Liste complète des projets</a>
+</div>
+<!-- CUSTOM CONTAINER -->
+<section class="custom-section-container with-separation-bottom with-separation-top">
+	<div class="container">
+		<div class="custom-section-text">
+  		<h2 class="animate-me fadeInLeft">Devenir partenaire</h2>
+  		<p class="animate-me fadeInLeft">Nous jouissons d’une expertise multiculturelle, multinationale et
+professionnelle.</p>
+
+		</div>
+		<div class="custom-section-buttons">
+  		<a data-description="Submit a project" class="btn btn-default animate-me fadeInRight planner-btn"><i class="fa fa-book"></i> Soumettre un projet</a>
+  		<a href="<%= contact_path %>" class="btn btn-default animate-me fadeInRight"><i class="fa fa-share-square-o"></i> Se renseigner</a>
+		</div>
+	</div>
+</section>
+
+
+<div class="container">
+	<!-- PARTNERS -->
+	<h2 class="with-breaker animate-me fadeInUp">
+		Nos partenaires<span>Un soutien de qualité!</span>
+	</h2>
+	<div id="partners-slider" class="flexslider">
+		<ul class="slides">
+			<li class="partners-slide">
+				<a><img src="<%= asset_path 'front/partners/01.jpg' %>" alt="Partner Logo"></a>
+			</li>
+			<li class="partners-slide">
+				<a><img src="<%= asset_path 'front/partners/03.jpg' %>" alt="Partner Logo"></a>
+			</li>
+			<li class="partners-slide">
+				<a><img src="<%= asset_path 'front/partners/05.jpg' %>" alt="Partner Logo"></a>
+			</li>
+			<li class="partners-slide">
+				<a><img src="<%= asset_path 'front/partners/07.jpg' %>" alt="Partner Logo"></a>
+			</li>
+			<li class="partners-slide">
+				<a><img src="<%= asset_path 'front/partners/09.jpg' %>" alt="Partner Logo"></a>
+			</li>
+		</ul>
+	</div>
+</div>

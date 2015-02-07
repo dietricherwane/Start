@@ -1,0 +1,73 @@
+<!-- START BREADCRUMB -->
+<ul class="breadcrumb">
+  <li><a href="<%= subject_path %>">Nouveau sujet</a></li>
+  <li><a href="<%= subjects_path %>">Liste des sujets</a></li>
+</ul>
+<!-- END BREADCRUMB -->
+
+
+<div class="page-content-wrap">
+
+  <!-- BEGIN ROW -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <!-- START DEFAULT DATATABLE -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Liste des sujets</h3>
+          <ul class="panel-controls">
+            <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <%= notification_messages! %>
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th><%= Subject.human_attribute_name("name") %></th>
+                <th><%= Subject.human_attribute_name("published") %></th>
+                <th>Date de création</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @subjects.each do |subject| %>
+                <tr>
+                  <td>
+                    <%= subject.name %>
+                  </td>
+                  <td>
+                    <% if subject.published == false %>
+                      <div class="list-group-status status-offline"></div>
+                    <% else %>
+                      <div class="list-group-status status-online"></div>
+                    <% end %>
+                  </td>
+                  <td>
+                    <%= subject.created_at.strftime("%d-%m-%Y") + " à " + subject.created_at.strftime("%Hh %Mmn") %>
+                  </td>
+                  <td>
+                    <a href = "<%= edit_subject_path(subject.id) %>" style = "text-decoration: none;">
+                      <span class="fa fa-pencil" style = "margin-right: 15px;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editer le sujet"></span>
+                    </a>
+                    <% if subject.published == false %>
+                      <a href = "<%= enable_subject_path(subject.id) %>">
+                        <span class="fa fa-check" data-toggle="tooltip" data-placement="top" title="" data-original-title="Activer le sujet"></span>
+                      </a>
+                    <% else %>
+                      <a href = "<%= disable_subject_path(subject.id) %>"  style = "text-decoration: none;">
+                        <span class="fa fa-times-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Désactiver le sujet"></span>
+                      </a>
+                    <% end %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <!-- END DEFAULT DATATABLE -->
+    </div>
+  </div>
+</div>

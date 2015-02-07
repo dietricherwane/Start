@@ -1,0 +1,12 @@
+$(document).on("ajax:error", "#new_project", function(event, xhr, status, error) {
+  if(xhr.responseText.replace(/ /g,'') == "ok"){
+    alert("L'entreprise a été enregistrée.");
+    //$(event.data).clear_previous_errors();
+    //$('#myModal').modal('hide');
+    //$(event.data).getComboBoxValues(1, "#companies", "/js_companies");
+  }
+  else{
+    alert("Error.");
+    //$(event.data).render_form_errors($.parseJSON(xhr.responseText), "company");
+  }
+});
