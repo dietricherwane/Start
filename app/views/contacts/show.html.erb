@@ -47,12 +47,12 @@
                       <div class="panel panel-primary">
                         <div class="panel-heading ui-draggable-handle">
                           <h4 class="panel-title">
-                              <a href="#accTwoColThree">
+                              <a href="#<%= contact.id %>">
                                  Contenu du message
                               </a>
                           </h4>
                         </div>
-                        <div class="panel-body" id="accTwoColThree" style="display: none;">
+                        <div class="panel-body" id="<%= contact.id %>" style="display: none;">
                             <%= simple_format(contact.message) %>
                         </div>
                       </div>
