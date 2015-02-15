@@ -7,7 +7,7 @@
 		<button class="btn btn-default" data-filter="*"><i class="fa fa-tags"></i> Tous</button>
 		<% unless @completed_project_categories.blank? %>
 		  <% @completed_project_categories.each do |completed_project_category| %>
-	    <button class="btn btn-default" data-filter=".duke"><i class="fa fa-tag"></i> <%= completed_project_category.name %></button>
+	    <button class="btn btn-default" data-filter=".<%= completed_project_category.id %>"><i class="fa fa-tag"></i> <%= completed_project_category.name %></button>
 	    <% end %>
 	  <% end %>
 	</div>
@@ -15,15 +15,15 @@
 <div id="portfolio-container" class="with-separation-bottom with-separation-top">
 	<!--PORTFOLIO ITEM -->
 	<% unless @completed_projects.blank? %>
-	<% @completed_projects.each do |completed_project| %>
-	<figure class="portfolio-item effect-sadie duke">
-      <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
-      <figcaption>
-          <h4><%= completed_project.name %></h4>
-          <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
-      </figcaption>
-  </figure>
-  <% end %>
+	  <% @completed_projects.each do |completed_project| %>
+	  <figure class="portfolio-item effect-sadie <%= completed_project.completed_project_category.id %>">
+        <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
+        <figcaption>
+            <h4><%= completed_project.name %></h4>
+            <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
+        </figcaption>
+    </figure>
+    <% end %>
   <% end %>
   <!--PORTFOLIO ITEM -->
 </div>
