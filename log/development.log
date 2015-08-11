@@ -13838,6 +13838,7 @@ Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 08:26:41 +000
 
 
 Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 08:26:41 +0000
+<<<<<<< HEAD
 >>>>>>> d2df819e44a4c59d5008863c789b73c9e8f46a33
 
 
@@ -13945,3 +13946,538 @@ Started GET "/assets/front/partners/07.jpg" for 41.189.46.76 at 2015-08-11 14:15
 
 
 Started GET "/assets/front/partners/09.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
+=======
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-11 14:19:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (2.4ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (1.2ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 49]]
+  [1m[35mCompletedProjectImage Load (0.9ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 15]]
+  [1m[36mCompletedProjectImage Load (0.8ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 14]]
+  Rendered home/index.html.erb within layouts/front (137.0ms)
+  [1m[35mBudget Load (0.8ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 758ms (Views: 695.1ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:31 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 14:19:32 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (1.5ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (1.2ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 49]]
+  [1m[36mCompletedProjectImage Load (0.8ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 15]]
+  [1m[35mCompletedProjectImage Load (0.9ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 14]]
+  Rendered home/index.html.erb within layouts/front (27.8ms)
+  [1m[36mBudget Load (1.0ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 388ms (Views: 379.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 127.0.0.1 at 2015-08-11 14:20:52 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 14:20:53 +0000
+
+
+Started GET "/competences" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (1.0ms)
+  [1m[35mBudget Load (1.5ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 306ms (Views: 302.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:49 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 14:21:50 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (1.0ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.7ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 49]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 15]]
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 14]]
+  Rendered home/index.html.erb within layouts/front (22.7ms)
+  [1m[36mBudget Load (1.1ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 402ms (Views: 392.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:58 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 14:21:59 +0000
+>>>>>>> 7124a8e3d8d31ca803a563a5c5fa05304d430f3c
