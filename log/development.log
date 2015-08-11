@@ -13839,3 +13839,109 @@ Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-11 08:26:41 +000
 
 Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-11 08:26:41 +0000
 >>>>>>> d2df819e44a4c59d5008863c789b73c9e8f46a33
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.189.46.76 at 2015-08-11 14:13:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.189.46.76 at 2015-08-11 14:13:28 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.189.46.76 at 2015-08-11 14:13:28 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.189.46.76 at 2015-08-11 14:13:29 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.189.46.76 at 2015-08-11 14:13:29 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.189.46.76 at 2015-08-11 14:13:29 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.189.46.76 at 2015-08-11 14:13:29 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.189.46.76 at 2015-08-11 14:13:30 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.189.46.76 at 2015-08-11 14:13:30 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.189.46.76 at 2015-08-11 14:13:30 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.189.46.76 at 2015-08-11 14:13:31 +0000
+
+
+Started GET "/competences" for 41.189.46.76 at 2015-08-11 14:14:58 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (1.2ms)
+  [1m[35mBudget Load (1.0ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 552ms (Views: 522.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/contact" for 41.189.46.76 at 2015-08-11 14:15:13 +0000
+Processing by ContactsController#new as HTML
+  [1m[36mSubject Load (33.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE (("subjects"."published" = 't' OR "subjects"."published" IS NULL))[0m
+  Rendered contacts/new.html.erb within layouts/front (68.3ms)
+  [1m[35mBudget Load (0.8ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 323ms (Views: 274.5ms | ActiveRecord: 39.3ms)
+
+
+Started GET "/assets/front/maps/googleapi.maps.js?body=1" for 41.189.46.76 at 2015-08-11 14:15:14 +0000
+
+
+Started GET "/assets/front/maps/initialize_map.js?body=1" for 41.189.46.76 at 2015-08-11 14:15:15 +0000
+
+
+Started GET "/" for 41.189.46.76 at 2015-08-11 14:15:21 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (0.8ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.7ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 21]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 20]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 19]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 18]]
+  Rendered home/index.html.erb within layouts/front (51.1ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 301ms (Views: 284.9ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.189.46.76 at 2015-08-11 14:15:22 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.189.46.76 at 2015-08-11 14:15:22 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.189.46.76 at 2015-08-11 14:15:22 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.189.46.76 at 2015-08-11 14:15:22 +0000
+
+
+Started GET "/" for 41.189.46.76 at 2015-08-11 14:15:24 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (0.7ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 21]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 20]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 19]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 18]]
+  Rendered home/index.html.erb within layouts/front (15.4ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 260ms (Views: 255.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.189.46.76 at 2015-08-11 14:15:26 +0000
