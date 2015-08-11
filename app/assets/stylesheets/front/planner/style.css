@@ -83,7 +83,8 @@ overflow-y:scroll;
 	background-color:#1b1b1b;
 }
 .purple {
-	background-color:rgb(150,69,135);
+	background-color:#66cccc;
+	/*background-color:rgb(150,69,135);*/
 }
 .black-tint {
 	background:rgba(0,0,0,0.7);
@@ -268,9 +269,9 @@ margin-left:15px;
 .white.submit {
 	color:#111;
 }
-.purple.submit:hover {
+/*.purple.submit:hover {
 	background:rgb(102, 44, 91);
-}
+}*/
 input.submit:before {
 	content:'\f003';
 	font-family:fontAwesome;
