@@ -52,7 +52,7 @@
         <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
         <figcaption>
           <h4><%= completed_project.name %></h4>
-          <a href="portfolio-single.html">Description</a>
+          <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
         </figcaption>
       </figure>
     <% end %>
