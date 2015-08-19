@@ -13,7 +13,13 @@
 				    <li><a href="/images/medium/missing.png" data-fancybox-group="project-slider" class="fancybox"><img src="/images/medium/missing.png" alt="<%= @completed_project.name %>"></a></li>
 				  <% else %>
 				    <% @project_images.each do |project_image| %>
-				      <li><a href="<%= project_image.photo.url(:medium) %>" data-fancybox-group="project-slider" class="fancybox"><img src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>"></a></li>
+				      <li><a href="<%= project_image.photo.url(:medium) %>" data-fancybox-group="project-slider" class="fancybox">
+
+
+                  <img style = "max-width: 520px;"  src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>" />
+
+
+
 				    <% end %>
 				  <% end %>
 				</ul>
@@ -51,7 +57,7 @@
 	    <figure class="portfolio-item effect-sadie">
         <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
         <figcaption>
-          <h4><%= completed_project.name %></h4>
+          <h4><%= completed_project.name %><br /><br /><i class="fa fa-search-plus"></i></h4>
           <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
         </figcaption>
       </figure>

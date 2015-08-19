@@ -724,9 +724,9 @@ h4.with-breaker:after{
 	border-radius: 1px;
 }
 .main-container .dropcap{
-	font-size: 2.5em;
+	font-size: 2.0em;
 	float: left;
-	margin: 10px 20px 10px 0;
+	/*margin: 10px 20px 10px 0;*/
 }
 .main-container .welcome-message{
 	text-transform: none;
@@ -1668,7 +1668,7 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav a:before  { font-family: "FontAwesome"; padding-top: 15px; font-size: 40px; display: inline-block; content: "\f104"; }
 .flex-direction-nav a.flex-next:before  { content: "\f105"; }
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: #66666; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px;}
 .flex-control-paging li a:hover { background: #333; background: #666; }
@@ -1775,3 +1775,24 @@ html[xmlns] .slides {display: block;}
 .social-list a:hover .fa-windows{color:#12B6F3;}
 .social-list a:hover .fa-xing,.social-list .fa-xing-square{color:#00555C;}
 .social-list a:hover .fa-youtube,.social-list .fa-youtube-play,.social-list .fa-youtube-square{color:#C52F30;}
+
+.custom_container {
+  height: 300px;
+  width: 475px;
+  position: relative;
+}
+.custom_image {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#custom_text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}

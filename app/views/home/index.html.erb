@@ -7,7 +7,7 @@
 		<tr class="skills-row">
 			<td class="skill animate-me zoomIn">
   			<h4><i class="fa fa-star-o"></i>Design d'intérieur</h4>
-  			<p>START propose une expertise de haute qualité en Design d’Intérieur. C’est la recherche de la satisfaction complète par l’écoute et le respect du commanditaire.</p>
+  			<p>START propose une expertise de haute qualité en Design d’Intérieur. C’est la recherche de la satisfaction complète par l’écoute et le respect du commanditaire. Nous créons des espaces qui rendent la vie plus belle.</p>
 			</td>
 			<td class="skill animate-me zoomIn">
   			<h4><i class="fa fa-ellipsis-v"></i>Conception de plans</h4>
@@ -15,21 +15,21 @@
 			</td>
 			<td class="skill animate-me zoomIn">
   			<h4><i class="fa fa-sun-o"></i>Architecture 3D</h4>
-  			<p>START est en mesure de vous fournir des designs 3D de l'environnement de votre choix. Nous vous produirons des plans réalistes avant construction de vos maisons, immeubles ou lieu de travail</p>
+  			<p>START est en mesure de vous fournir des designs 3D de l'environnement de votre choix. Nous vous produirons des plans réalistes avant construction de vos maisons, immeubles ou lieu de travail.</p>
 			</td>
 		</tr>
 		<tr class="skills-row animate-me zoomIn">
 			<td class="skill">
   			<h4><i class="fa fa-gavel"></i>Rénovation</h4>
-  			<p>Que vous planifiez la construction de votre nouvelle résidence ou que vous prévoyez entreprendre des travaux de rénovation sur votre demeure actuelle, tôt ou tard vous devrez réfléchir au matériau pour lequel vous opterez pour habiller votre maison.</p>
+  			<p>Que vous planifiiez la construction de votre résidence ou que vous prévoyiez entreprendre des travaux de rénovation sur votre demeure actuelle, START vous aidera à y voir plus clair.</p>
 			</td>
-			<td class="skill animate-me zoomIn">
+			<td class="skill animate-me zoomIn" style = "text-align: top;">
   			<h4><i class="fa fa-book"></i>Audit</h4>
   			<p>Dans le but d'améliorer votre habitat, Start se charge de faire un état de votre environnement et fera des propositions de qualités en fonction de vos goûts et besoins en fournissant un devis.</p>
 			</td>
 			<td class="skill animate-me zoomIn">
   			<h4><i class="fa fa-cubes"></i>Consulting</h4>
-  			<p>Chez START, nous nous engageons à fournir une expertise à toute personne sur le point de faire l'acquisition d'un appartement, d'une maison ,d'un commerce ou même des aménagements</p>
+  			<p>Chez START, nous nous engageons à fournir une expertise à toute personne sur le point de faire l'acquisition d'un appartement, d'une maison ,d'un commerce ou même des aménagements.</p>
 			</td>
 		</tr>
 	</table>
@@ -49,8 +49,9 @@
 	    <figure class="portfolio-item effect-sadie">
         <%= image_tag(completed_project.completed_project_images.first.photo.url(:medium)) rescue image_tag("/images/medium/missing.png") %>
         <figcaption>
-          <h4><%= completed_project.name %></h4>
+          <h4><%= completed_project.name %><br /><br /><i class="fa fa-search-plus"></i></h4>
           <a href="<%= completed_project_details_path(completed_project.id) %>">Description</a>
+
         </figcaption>
       </figure>
     <% end %>
@@ -84,19 +85,16 @@ professionnelle.</p>
 	<div id="partners-slider" class="flexslider">
 		<ul class="slides">
 			<li class="partners-slide">
-				<a><img src="<%= asset_path 'front/partners/01.jpg' %>" alt="Partner Logo"></a>
+				<a href = "http://www.homedepot.ca" target = "_blank"><img src="<%= asset_path 'front/partners/home_depot.png' %>" alt="The Home Depot"></a>
 			</li>
 			<li class="partners-slide">
-				<a><img src="<%= asset_path 'front/partners/03.jpg' %>" alt="Partner Logo"></a>
+				<a href = "http://www.wayfair.com" target = "_blank"><img src="<%= asset_path 'front/partners/wayfair.png' %>" alt="Wayfair"></a>
 			</li>
 			<li class="partners-slide">
-				<a><img src="<%= asset_path 'front/partners/05.jpg' %>" alt="Partner Logo"></a>
+				<a href = "http://www.orcatendances.com" target = "_blank"><img src="<%= asset_path 'front/partners/orca_deco.png' %>" alt="Orca Deco"></a>
 			</li>
 			<li class="partners-slide">
-				<a><img src="<%= asset_path 'front/partners/07.jpg' %>" alt="Partner Logo"></a>
-			</li>
-			<li class="partners-slide">
-				<a><img src="<%= asset_path 'front/partners/09.jpg' %>" alt="Partner Logo"></a>
+				<a href = "http://www.houzz.fr" target = "_blank"><img src="<%= asset_path 'front/partners/houzz.png' %>" alt="Houzz"></a>
 			</li>
 		</ul>
 	</div>
