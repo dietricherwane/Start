@@ -1,3 +1,8 @@
 Configure recaptcha for production
 
 Pace loader: styles.css 1681
+
+Portfolio details arrow.
+
+
+prev and next in plugins.js have been replaced by pre and nex so that they won't appear
