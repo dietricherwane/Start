@@ -34490,3 +34490,2018 @@ Started GET "/assets/front/footer.png" for 127.0.0.1 at 2015-08-16 15:44:42 +000
 
 Started GET "/assets/front/planner/stripe.png" for 127.0.0.1 at 2015-08-16 15:44:42 +0000
 >>>>>>> a75055dd9c037ba09d474278cd2b3e08565e5d82
+
+
+Started GET "/portfolio/23/details" for 41.207.217.236 at 2015-08-17 11:18:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"23"}
+  [1m[35mCompletedProject Load (0.9ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 23 LIMIT 1
+  [1m[36mCompletedProjectImage Load (0.7ms)[0m  [1mSELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.6ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProject Load (1.0ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (61.8ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 634ms (Views: 535.5ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:14 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:14 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:14 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:14 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:14 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+
+
+Started GET "/assets/front.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:15 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:16 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/front.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:17 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:18 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:20 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:20 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.207.217.236 at 2015-08-17 11:18:20 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.217.236 at 2015-08-17 11:18:20 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.217.236 at 2015-08-17 11:18:21 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.217.236 at 2015-08-17 11:18:21 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.217.236 at 2015-08-17 11:18:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:45 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.217.236 at 2015-08-17 11:20:45 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.217.236 at 2015-08-17 11:20:46 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.217.236 at 2015-08-17 11:20:46 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.217.236 at 2015-08-17 11:20:48 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.217.236 at 2015-08-17 11:20:48 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.217.236 at 2015-08-17 11:20:48 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.217.236 at 2015-08-17 11:20:49 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.217.236 at 2015-08-17 11:20:50 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.217.236 at 2015-08-17 11:20:50 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.217.236 at 2015-08-17 11:20:50 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:50 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:51 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:51 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:51 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:51 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:51 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.207.217.236 at 2015-08-17 11:20:52 +0000
+
+
+Started GET "/competences" for 41.202.93.230 at 2015-08-17 14:25:45 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (1.2ms)
+  [1m[35mBudget Load (1.0ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 502ms (Views: 472.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:47 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:47 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:47 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:47 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:47 +0000
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:48 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:49 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:49 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 41.202.93.230 at 2015-08-17 14:25:50 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:50 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:50 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:50 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:51 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:51 +0000
+
+
+Started GET "/assets/front.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:51 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:51 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:51 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:52 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.202.93.230 at 2015-08-17 14:25:52 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.202.93.230 at 2015-08-17 14:25:52 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.202.93.230 at 2015-08-17 14:25:53 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.202.93.230 at 2015-08-17 14:25:54 +0000
+
+
+Started GET "/" for 85.25.217.228 at 2015-08-17 14:42:47 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (0.8ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (54.4ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 303ms (Views: 287.2ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/portfolio/23/details" for 41.207.25.96 at 2015-08-17 15:13:03 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"23"}
+  [1m[36mCompletedProject Load (0.5ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 23 LIMIT 1[0m
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectCategory Load (0.6ms)[0m  [1mSELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (81.8ms)
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 331ms (Views: 321.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:04 +0000
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:05 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 15:13:06 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 15:13:07 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 15:13:07 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 15:13:07 +0000
+
+
+Started GET "/" for 41.207.25.96 at 2015-08-17 16:17:48 +0000
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (58.9ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 317ms (Views: 313.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:49 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:51 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:51 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:51 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:51 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:51 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:52 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:52 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:52 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:52 +0000
+
+
+Started GET "/assets/front.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:53 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:53 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:53 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:53 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:53 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.25.96 at 2015-08-17 16:17:54 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.25.96 at 2015-08-17 16:17:55 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.25.96 at 2015-08-17 16:17:55 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:17:55 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:17:56 +0000
+
+
+Started GET "/portfolio/25/details" for 41.207.25.96 at 2015-08-17 16:19:20 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"25"}
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 25 LIMIT 1
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (2.7ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (68.4ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 320ms (Views: 311.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:19:21 +0000
+
+
+Started GET "/assets/front/images/fancybox/fancybox_overlay.png" for 41.207.25.96 at 2015-08-17 16:20:22 +0000
+Processing by ErrorsController#routing as PNG
+  Parameters: {"rogue_url"=>"assets/front/images/fancybox/fancybox_overlay"}
+  Rendered public/404.html (0.4ms)
+Completed 404 Not Found in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/front/fancybox/fancybox_sprite@2x.png" for 41.207.25.96 at 2015-08-17 16:20:22 +0000
+
+
+Started GET "/assets/front/fancybox/blank.gif" for 41.207.25.96 at 2015-08-17 16:20:22 +0000
+
+
+Started GET "/portfolio/24/details" for 41.207.25.96 at 2015-08-17 16:24:29 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"24"}
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 24 LIMIT 1[0m
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectCategory Load (0.5ms)[0m  [1mSELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (19.7ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 267ms (Views: 259.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:24:29 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:24:29 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:24:29 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:24:29 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:24:30 +0000
+
+
+Started GET "/assets/front/images/fancybox/fancybox_overlay.png" for 41.207.25.96 at 2015-08-17 16:24:38 +0000
+Processing by ErrorsController#routing as PNG
+  Parameters: {"rogue_url"=>"assets/front/images/fancybox/fancybox_overlay"}
+  Rendered public/404.html (0.1ms)
+Completed 404 Not Found in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/front/fancybox/fancybox_sprite@2x.png" for 41.207.25.96 at 2015-08-17 16:24:38 +0000
+
+
+Started GET "/assets/front/fancybox/blank.gif" for 41.207.25.96 at 2015-08-17 16:24:39 +0000
+
+
+Started GET "/a-propos" for 41.207.25.96 at 2015-08-17 16:26:36 +0000
+Processing by HomeController#about_us as HTML
+  Rendered home/about_us.html.erb within layouts/front (36.6ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 294ms (Views: 292.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/team/01.jpg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:26:37 +0000
+
+
+Started GET "/" for 41.207.25.96 at 2015-08-17 16:28:21 +0000
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (1.1ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.7ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (58.7ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 613ms (Views: 529.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:28:21 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:28:21 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:28:21 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:28:22 +0000
+
+
+Started GET "/nos-projets" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+Processing by HomeController#portfolio as HTML
+  [1m[36mCompletedProjectCategory Load (1.1ms)[0m  [1mSELECT "completed_project_categories".* FROM "completed_project_categories"  WHERE (("completed_project_categories"."published" = 't' OR "completed_project_categories"."published" IS NULL))  ORDER BY name ASC[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 6]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 4]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 7]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 8]]
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))[0m
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  Rendered home/portfolio.html.erb within layouts/front (30.3ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 275ms (Views: 264.3ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:28:44 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:28:45 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:28:45 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:28:45 +0000
+
+
+Started GET "/competences" for 41.207.25.96 at 2015-08-17 16:28:50 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (0.1ms)
+  [1m[36mBudget Load (0.8ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 246ms (Views: 243.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:28:50 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:28:50 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:28:51 +0000
+
+
+Started GET "/contact" for 41.207.25.96 at 2015-08-17 16:29:20 +0000
+Processing by ContactsController#new as HTML
+  [1m[35mSubject Load (0.7ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE (("subjects"."published" = 't' OR "subjects"."published" IS NULL))
+  Rendered contacts/new.html.erb within layouts/front (79.0ms)
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 335ms (Views: 320.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/maps/googleapi.maps.js?body=1" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/maps/initialize_map.js?body=1" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/maps.js?body=1" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:29:21 +0000
+
+
+Started GET "/" for 41.207.25.96 at 2015-08-17 16:36:56 +0000
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (0.7ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (15.2ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 259ms (Views: 254.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:36:57 +0000
+
+
+Started GET "/" for 41.207.25.96 at 2015-08-17 16:39:51 +0000
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (0.7ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (14.7ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 260ms (Views: 255.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:39:52 +0000
+
+
+Started GET "/competences" for 41.207.25.96 at 2015-08-17 16:42:34 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (0.6ms)
+  [1m[35mBudget Load (0.8ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 246ms (Views: 244.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/front/style.css?body=1" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:42:35 +0000
+
+
+Started GET "/" for 41.207.25.96 at 2015-08-17 16:42:38 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.3ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.3ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (15.1ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 265ms (Views: 260.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:42:39 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:42:39 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:42:39 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:42:39 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:42:39 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:42:40 +0000
+
+
+Started GET "/nos-projets" for 41.207.25.96 at 2015-08-17 16:44:48 +0000
+Processing by HomeController#portfolio as HTML
+  [1m[36mCompletedProjectCategory Load (1.1ms)[0m  [1mSELECT "completed_project_categories".* FROM "completed_project_categories"  WHERE (("completed_project_categories"."published" = 't' OR "completed_project_categories"."published" IS NULL))  ORDER BY name ASC[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 6]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 4]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 7]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 8]]
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))[0m
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  Rendered home/portfolio.html.erb within layouts/front (38.8ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 293ms (Views: 275.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:44:49 +0000
+
+
+Started GET "/competences" for 41.207.25.96 at 2015-08-17 16:45:02 +0000
+Processing by HomeController#skills as HTML
+  Rendered home/skills.html.erb within layouts/front (0.1ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 244ms (Views: 242.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:45:02 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:45:03 +0000
+
+
+Started GET "/a-propos" for 41.207.25.96 at 2015-08-17 16:48:41 +0000
+Processing by HomeController#about_us as HTML
+  Rendered home/about_us.html.erb within layouts/front (2.3ms)
+  [1m[35mBudget Load (0.8ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 245ms (Views: 243.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/team/01.jpg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:48:42 +0000
+
+
+Started GET "/contact" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+Processing by ContactsController#new as HTML
+  [1m[36mSubject Load (0.7ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE (("subjects"."published" = 't' OR "subjects"."published" IS NULL))[0m
+  Rendered contacts/new.html.erb within layouts/front (84.1ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 346ms (Views: 331.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/front/maps/googleapi.maps.js?body=1" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/maps/initialize_map.js?body=1" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/maps.js?body=1" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 16:49:14 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 16:49:15 +0000
+
+
+Started GET "/a-propos" for 41.207.25.96 at 2015-08-17 17:40:07 +0000
+Processing by HomeController#about_us as HTML
+  Rendered home/about_us.html.erb within layouts/front (1.5ms)
+  [1m[36mBudget Load (0.6ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 246ms (Views: 244.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/front/options.css?body=1" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.25.96 at 2015-08-17 17:40:08 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/team/01.jpg" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.25.96 at 2015-08-17 17:40:09 +0000
+
+
+Started GET "/" for 41.207.22.182 at 2015-08-18 08:58:53 +0000
+Processing by HomeController#index as HTML
+  [1m[35mCompletedProject Load (0.7ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (14.5ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 260ms (Views: 255.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/front/style.css?body=1" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.22.182 at 2015-08-18 08:58:54 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.22.182 at 2015-08-18 08:58:55 +0000
+
+
+Started GET "/a-propos" for 41.207.22.182 at 2015-08-18 08:59:29 +0000
+Processing by HomeController#about_us as HTML
+  Rendered home/about_us.html.erb within layouts/front (1.5ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 251ms (Views: 249.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/team/01.jpg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.22.182 at 2015-08-18 08:59:30 +0000
+
+
+Started GET "/nos-projets" for 41.207.22.182 at 2015-08-18 08:59:52 +0000
+Processing by HomeController#portfolio as HTML
+  [1m[36mCompletedProjectCategory Load (0.7ms)[0m  [1mSELECT "completed_project_categories".* FROM "completed_project_categories"  WHERE (("completed_project_categories"."published" = 't' OR "completed_project_categories"."published" IS NULL))  ORDER BY name ASC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 6]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 7]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 8]]
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))[0m
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCompletedProjectImage Load (0.6ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  Rendered home/portfolio.html.erb within layouts/front (27.0ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 273ms (Views: 262.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.22.182 at 2015-08-18 08:59:52 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.22.182 at 2015-08-18 08:59:53 +0000
+
+
+Started GET "/portfolio/23/details" for 41.207.22.182 at 2015-08-18 09:00:27 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"23"}
+  [1m[36mCompletedProject Load (0.7ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 23 LIMIT 1[0m
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectCategory Load (0.4ms)[0m  [1mSELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (21.7ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 270ms (Views: 263.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.22.182 at 2015-08-18 09:00:28 +0000
+
+
+Started GET "/assets/front/images/fancybox/fancybox_overlay.png" for 41.207.22.182 at 2015-08-18 09:00:30 +0000
+Processing by ErrorsController#routing as PNG
+  Parameters: {"rogue_url"=>"assets/front/images/fancybox/fancybox_overlay"}
+  Rendered public/404.html (0.4ms)
+Completed 404 Not Found in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/front/fancybox/fancybox_sprite@2x.png" for 41.207.22.182 at 2015-08-18 09:00:30 +0000
+
+
+Started GET "/assets/front/fancybox/blank.gif" for 41.207.22.182 at 2015-08-18 09:00:30 +0000
+
+
+Started GET "/portfolio/23/details" for 154.68.35.119 at 2015-08-18 14:33:14 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"23"}
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 23 LIMIT 1
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.5ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.3ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.4ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (21.4ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 274ms (Views: 267.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:15 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:16 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:17 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:17 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:17 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 154.68.35.119 at 2015-08-18 14:33:18 +0000
+
+
+Started GET "/assets/front/footer@2X.png" for 154.68.35.119 at 2015-08-18 14:33:19 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 154.68.35.119 at 2015-08-18 14:33:19 +0000
+
+
+Started GET "/" for 41.189.33.227 at 2015-08-19 16:11:14 +0000
+Processing by HomeController#index as HTML
+  [1m[36mCompletedProject Load (0.8ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 25]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  Rendered home/index.html.erb within layouts/front (45.4ms)
+  [1m[35mBudget Load (0.6ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 760ms (Views: 755.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/front/bootstrap.min.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:15 +0000
+
+
+Started GET "/assets/front/font-awesome.min.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:15 +0000
+
+
+Started GET "/assets/front/animate.min.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:16 +0000
+
+
+Started GET "/assets/front/fonts/droid.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:16 +0000
+
+
+Started GET "/assets/front/style.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:16 +0000
+
+
+Started GET "/assets/front.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:16 +0000
+
+
+Started GET "/assets/front/options.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:16 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/datepicker.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:17 +0000
+
+
+Started GET "/assets/front/planner/plugins.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:17 +0000
+
+
+Started GET "/assets/front/fonts/raleway.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:17 +0000
+
+
+Started GET "/assets/front/planner/fawesome.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:17 +0000
+
+
+Started GET "/assets/front/planner/planner.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/planner/gumby.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/responsive.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/planner/style.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/planner/responsive.css?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/planner/modernizr-2.6.2.min.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/plugins.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:18 +0000
+
+
+Started GET "/assets/front/custom.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:19 +0000
+
+
+Started GET "/assets/front/planner/gumby.min.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:19 +0000
+
+
+Started GET "/assets/front/jquery-1.11.1.min.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:20 +0000
+
+
+Started GET "/assets/front.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:22 +0000
+
+
+Started GET "/assets/front/bootstrap_datepicker/bootstrap-datepicker.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:22 +0000
+
+
+Started GET "/assets/front/planner/plugins.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:23 +0000
+
+
+Started GET "/assets/front/planner/main.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:23 +0000
+
+
+Started GET "/assets/front/planner/planner.js?body=1" for 41.189.33.227 at 2015-08-19 16:11:23 +0000
+
+
+Started GET "/assets/front/fonts/fontawesome-webfont.woff?v=4.1.0" for 41.189.33.227 at 2015-08-19 16:11:23 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.189.33.227 at 2015-08-19 16:11:23 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.189.33.227 at 2015-08-19 16:11:24 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.189.33.227 at 2015-08-19 16:11:24 +0000
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/partners/01.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/partners/03.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/partners/05.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/partners/07.jpg" for 41.189.33.227 at 2015-08-19 16:11:25 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.189.33.227 at 2015-08-19 16:11:26 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.189.33.227 at 2015-08-19 16:11:26 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.189.33.227 at 2015-08-19 16:11:26 +0000
+
+
+Started GET "/assets/front/partners/09.jpg" for 41.189.33.227 at 2015-08-19 16:11:27 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.189.33.227 at 2015-08-19 16:11:28 +0000
+
+
+Started GET "/nos-projets" for 41.207.3.159 at 2015-08-19 16:24:40 +0000
+Processing by HomeController#portfolio as HTML
+  [1m[36mCompletedProjectCategory Load (23.1ms)[0m  [1mSELECT "completed_project_categories".* FROM "completed_project_categories"  WHERE (("completed_project_categories"."published" = 't' OR "completed_project_categories"."published" IS NULL))  ORDER BY name ASC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 6]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 7]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1[0m  [["completed_project_category_id", 5]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "completed_projects"  WHERE "completed_projects"."completed_project_category_id" = $1  [["completed_project_category_id", 8]]
+  [1m[36mCompletedProject Load (0.5ms)[0m  [1mSELECT "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))[0m
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 22]]
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 24]]
+  [1m[35mCompletedProjectCategory Load (0.4ms)[0m  SELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCompletedProjectImage Load (0.4ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  Rendered home/portfolio.html.erb within layouts/front (49.3ms)
+  [1m[35mBudget Load (0.7ms)[0m  SELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC
+Completed 200 OK in 304ms (Views: 272.0ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.207.3.159 at 2015-08-19 16:24:41 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.3.159 at 2015-08-19 16:24:42 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.3.159 at 2015-08-19 16:24:43 +0000
+
+
+Started GET "/portfolio/23/details" for 41.207.3.159 at 2015-08-19 16:24:45 +0000
+Processing by CompletedProjectsController#details as HTML
+  Parameters: {"completed_project_id"=>"23"}
+  [1m[36mCompletedProject Load (0.6ms)[0m  [1mSELECT  "completed_projects".* FROM "completed_projects"  WHERE "completed_projects"."id" = 23 LIMIT 1[0m
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  [["completed_project_id", 23]]
+  [1m[36mCompletedProjectCategory Load (0.4ms)[0m  [1mSELECT  "completed_project_categories".* FROM "completed_project_categories"  WHERE "completed_project_categories"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mCompletedProject Load (0.6ms)[0m  SELECT  "completed_projects".* FROM "completed_projects"  WHERE (("completed_projects"."published" = 't' OR "completed_projects"."published" IS NULL))  ORDER BY created_at DESC LIMIT 6
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 25]]
+  [1m[35mCompletedProjectImage Load (0.6ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 24]]
+  [1m[36mCompletedProjectImage Load (0.5ms)[0m  [1mSELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1[0m  [["completed_project_id", 23]]
+  [1m[35mCompletedProjectImage Load (0.5ms)[0m  SELECT  "completed_project_images".* FROM "completed_project_images"  WHERE "completed_project_images"."completed_project_id" = $1  ORDER BY "completed_project_images"."id" ASC LIMIT 1  [["completed_project_id", 22]]
+  Rendered completed_projects/details.html.erb within layouts/front (20.8ms)
+  [1m[36mBudget Load (0.7ms)[0m  [1mSELECT "budgets".* FROM "budgets"  WHERE (("budgets"."published" = 't' OR "budgets"."published" IS NULL))  ORDER BY created_at ASC[0m
+Completed 200 OK in 277ms (Views: 270.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/front/backgrounds/bg1.jpg" for 41.207.3.159 at 2015-08-19 16:24:46 +0000
+
+
+Started GET "/assets/front/backgrounds/bg2.jpg" for 41.207.3.159 at 2015-08-19 16:24:46 +0000
+
+
+Started GET "/assets/front/backgrounds/bg3.jpg" for 41.207.3.159 at 2015-08-19 16:24:46 +0000
+
+
+Started GET "/assets/front/logo-fixed-menu.png" for 41.207.3.159 at 2015-08-19 16:24:46 +0000
+
+
+Started GET "/assets/front/logo-footer.png" for 41.207.3.159 at 2015-08-19 16:24:47 +0000
+
+
+Started GET "/assets/front/breaker.svg" for 41.207.3.159 at 2015-08-19 16:24:48 +0000
+
+
+Started GET "/assets/front/planner/stripe.png" for 41.207.3.159 at 2015-08-19 16:24:48 +0000
+
+
+Started GET "/assets/front/footer.png" for 41.207.3.159 at 2015-08-19 16:24:48 +0000
+
+
+Started GET "/assets/front/breaker-bottom.svg" for 41.207.3.159 at 2015-08-19 16:24:48 +0000
+
+
+Started GET "/assets/front/logo-header.png" for 41.207.3.159 at 2015-08-19 16:24:48 +0000
+
+
+Started GET "/assets/front/fancybox/fancybox_sprite.png" for 41.207.3.159 at 2015-08-19 16:24:54 +0000
+
+
+Started GET "/assets/front/fancybox/blank.gif" for 41.207.3.159 at 2015-08-19 16:24:54 +0000
+
+
+Started GET "/assets/front/images/fancybox/fancybox_overlay.png" for 41.207.3.159 at 2015-08-19 16:24:55 +0000
+Processing by ErrorsController#routing as PNG
+  Parameters: {"rogue_url"=>"assets/front/images/fancybox/fancybox_overlay"}
+  Rendered public/404.html (0.1ms)
+Completed 404 Not Found in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
