@@ -15,7 +15,7 @@
 				    <% @project_images.each do |project_image| %>
 				      <li>
 				        <a href="<%= project_image.photo.url(:medium) %>" data-fancybox-group="project-slider" class="fancybox">
-				          <img style = "max-width: 520px;"  src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>" />
+				          <img style = "max-width: 490px;"  src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>" />
 				        </a>
               </li>
 				    <% end %>
