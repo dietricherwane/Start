@@ -13,13 +13,11 @@
 				    <li><a href="/images/medium/missing.png" data-fancybox-group="project-slider" class="fancybox"><img src="/images/medium/missing.png" alt="<%= @completed_project.name %>"></a></li>
 				  <% else %>
 				    <% @project_images.each do |project_image| %>
-				      <li><a href="<%= project_image.photo.url(:medium) %>" data-fancybox-group="project-slider" class="fancybox">
-
-
-                  <img style = "max-width: 520px;"  src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>" />
-
-
-
+				      <li>
+				        <a href="<%= project_image.photo.url(:medium) %>" data-fancybox-group="project-slider" class="fancybox">
+				          <img style = "max-width: 520px;"  src="<%= project_image.photo.url(:medium) %>" alt="<%= @completed_project.name %>" />
+				        </a>
+              </li>
 				    <% end %>
 				  <% end %>
 				</ul>
