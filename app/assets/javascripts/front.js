@@ -15,5 +15,6 @@
 // require turbolinks
 //= require front/plugins
 //= require front/custom
+//= require front/jquery-photo-resize
 
 //= require front/bootstrap_datepicker/bootstrap-datepicker

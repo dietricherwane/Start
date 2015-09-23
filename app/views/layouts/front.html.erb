@@ -45,7 +45,7 @@
 		  		<ul class="animate-me fadeInDown" data-wow-duration="1.2s">
 			  		<li class="menu-item"><i class="fa fa-phone"></i> 001 865-246-8210</li>
 			  		<!--<li class="menu-item"><a><i class="fa fa-question"></i> FAQ</a></li>-->
-			  		<li class="menu-item"><span class="navigation-social">Réseau social</span><a href="#"><i class="fa fa-pinterest"></i></a> </li>
+			  		<li class="menu-item"><span class="navigation-social">Réseau social</span><a target = "_blank" href="https://www.pinterest.com/startci"><i class="fa fa-pinterest"></i></a> </li>
 
 		  		</ul>
 	  		</div>
@@ -84,7 +84,7 @@
 			  		  <a data-description="Submit a project" class="planner-btn" style = "cursor: pointer;">Consulting</a>
 			  		</li>
 			  		<li class="menu-item <%= @menu_hash_class[:contact] %>">
-			  		  <a href="<%= contact_path %>" data-description="Get in touch">Contacts</a>
+			  		  <a href="<%= contact_path %>" data-description="Get in touch">Contact</a>
 			  		</li>
 		  		</ul>
 	  		</nav>
@@ -113,11 +113,7 @@
 	  		<!-- SHADOW -->
 	  		<div id="shade"></div>
 
-	  		<!-- SLIDER NAVIGATION (DELETE IF YOU DON'T USE THE SLIDER) -->
-            <div class="navigation-slider-container">
-            	<a href="#" id="sliderPrev"><i class="fa fa-arrow-left"></i></a>
-            	<a href="#" id="sliderNext"><i class="fa fa-arrow-right"></i></a>
-            </div>
+
 
 	  		<!-- HEADER SLIDER -->
 		  	<div class="flexslider" id="header-slider">
@@ -156,7 +152,7 @@
 		        <div class="contact-box contact-box-pinterest animate-me zoomIn">
 			        <h2>Pinterest</h2>
 			        <p  style = "text-align: center;">Suivez nous, commentez et partageons nos idées sur Pinterest.</p>
-			        <a href="#" class="btn btn-default"><i class="fa fa-pinterest"></i> Suivez nous</a>
+			        <a href="https://www.pinterest.com/startci" class="btn btn-default"><i class="fa fa-pinterest"></i> Suivez nous</a>
 		        </div>
 	        </div>
         </section>
@@ -346,23 +342,28 @@
     <%= javascript_include_tag 'front/planner/planner', 'data-turbolinks-track' => true %>
 
     <script type="text/javascript">
-		/*TEXT TICKER (ONLY FOR HOME PAGE)*/
-		$('#ticker-text').vTicker('init', {
-			speed: 300,
+		  /*TEXT TICKER (ONLY FOR HOME PAGE)*/
+		  $('#ticker-text').vTicker('init', {
+			  speed: 300,
 		    pause: 4000
 	    });
-	</script>
 
-  <script>
-  $(function() {
-    $('#project_begin_date').datepicker({
-      format: 'dd/mm/yyyy',
-      startDate: '+8d',
-      language: 'fr',
-      autoclose: true
+	    $("img").photoResize({
+				bottomSpacing: 15
+			});
+	  </script>
+
+    <script>
+    $(function() {
+      $('#project_begin_date').datepicker({
+        format: 'dd/mm/yyyy',
+        startDate: '+8d',
+        language: 'fr',
+        autoclose: true
+      });
     });
-  });
-  </script>
+    </script>
+
   </body>
   <!-- END BODY -->
 </html>
