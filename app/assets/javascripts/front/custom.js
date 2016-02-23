@@ -37,7 +37,7 @@
 		   	}
 	    }
 	    else{
-		    var numbermaxitems = 4;
+		    var numbermaxitems = 3;
 	    }
 	    $('.flexslider').flexslider({
 			animation: "slide",
